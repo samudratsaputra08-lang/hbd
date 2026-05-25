@@ -44,6 +44,20 @@ document.addEventListener('DOMContentLoaded', function() {
     updateAge();
     updateCurrentTime();
 
+    // --- Auto-play Background Music ---
+    const backgroundMusic = document.getElementById('background-music');
+    if (backgroundMusic) {
+        // Attempt to auto-play
+        backgroundMusic.play().catch(function(error) {
+            console.log('Autoplay failed. User may need to interact with page first.');
+        });
+        
+        // Allow play after user interaction
+        document.addEventListener('click', function() {
+            backgroundMusic.play();
+        }, { once: true });
+    }
+
     // --- Initialize AOS (Animate on Scroll) ---
     AOS.init({
         duration: 800,
