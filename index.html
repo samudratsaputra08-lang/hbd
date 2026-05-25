@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Birthday, [Enter Name of your loved one]!</title>
+  <title>Happy Birthday, Fina Nailu Zahira!</title>
 
   <!-- This script pulls in Tailwind CSS for styling -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -19,8 +19,35 @@
 
   <!-- Link to your new external CSS file -->
   <link rel="stylesheet" href="style.css">
+  <style>
+    .countdown-fire {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #ff6b00;
+      text-shadow: 
+        0 0 10px rgba(255, 107, 0, 0.8),
+        0 0 20px rgba(255, 0, 0, 0.6),
+        0 0 30px rgba(255, 140, 0, 0.4);
+      animation: fire-glow 1s ease-in-out infinite alternate;
+    }
+    
+    @keyframes fire-glow {
+      0% {
+        text-shadow: 
+          0 0 10px rgba(255, 107, 0, 0.8),
+          0 0 20px rgba(255, 0, 0, 0.6),
+          0 0 30px rgba(255, 140, 0, 0.4);
+      }
+      100% {
+        text-shadow: 
+          0 0 20px rgba(255, 107, 0, 1),
+          0 0 30px rgba(255, 0, 0, 0.8),
+          0 0 40px rgba(255, 140, 0, 0.6);
+      }
+    }
+  </style>
   <!-- IMPORTANT: Replace with a real image link after you upload it -->
-  <meta property="og:image" content="https://placehold.co/1200x630/87CEEB/FFFFFF?text=A+Surprise+For+[Name]">
+  <meta property="og:image" content="https://placehold.co/1200x630/87CEEB/FFFFFF?text=A+Surprise+For+Fina+Nailu+Zahira">
 </head>
 <body>
 <!-- Canvas for the falling cherry blossoms -->
@@ -29,16 +56,17 @@
 <!-- Section 1: Hero Welcome -->
 <header class="h-screen relative flex items-center justify-center text-white overflow-hidden">
   <video autoplay loop muted playsinline class="absolute top-0 left-0 w-full h-full object-cover z-[-1]">
-    <source src="img/sa.mp4" type="video/mp4">
+    <source src="img/background.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 
   <div class="absolute inset-0 bg-black bg-opacity-40"></div>
 
   <div class="text-center z-10 p-4" data-aos="fade-in" data-aos-duration="1500">
-    <h1 class="text-5xl md:text-7xl font-anime drop-shadow-lg">Happy Birthday, [Enter Name of your loved one]!</h1>
-    <p class="mt-4 text-xl font-semibold">Celebrating a wonderful journey of...[in background you can add video or photos of your loved one]</p>
-    <div id="countdown" class="mt-6 text-2xl font-semibold tracking-widest leading-relaxed"></div>
+    <h1 class="text-5xl md:text-7xl font-anime drop-shadow-lg">Happy Birthday, Fina Nailu Zahira!</h1>
+    <p class="mt-4 text-xl font-semibold">Celebrating a wonderful journey of...</p>
+    <div id="countdown" class="mt-6 text-2xl font-semibold tracking-widest leading-relaxed countdown-fire"></div>
+    <div id="current-time" class="mt-4 text-lg font-semibold text-yellow-300 animate-bounce"></div>
   </div>
 </header>
 
@@ -50,56 +78,59 @@
     <h2 class="text-4xl md:text-5xl font-anime text-sakura mb-8 drop-shadow-sm">A Special Message For You</h2>
     <div class="text-left text-lg leading-relaxed space-y-4 bg-white p-8 rounded-lg shadow-lg">
       <!-- TODO: Write your personal letter here -->
-      <p>Hey [Enter Name of your loved one] ,</p>
-      <p>Wish you a very Happy Birthday [Enter Name of your loved one]! May god fulfil all your wishes, you have an endless supply of happy days and your dreams turns into reality, A life surrounded with pets and life that will become a manga </p>
-      <p>Thankyou for always being so kind and reason behind everyone smile, Always connected to your roots , A true friend to everyone, You always be yourself and that's your vibe We all are very lucky, we are not in city of gems still we found a real gem.</p>
+      <p>Hey Fina Nailu Zahira ,</p>
+      <p>Semoga di umur yang sekarang, kamu makin bahagia, makin kuat, dan semua hal baik selalu dateng ke hidup kamu. Makasih ya udah hadir dan jadi salah satu alasan aku bisa senyum tiap hari. Kadang kamu nyebelin, kadang bikin gemes, tapi tetep… kamu orang favorit aku 😆❤️ </p>
+      <p>Aku cuma pengen kamu tau kalau kamu itu spesial banget. Jangan terlalu capek ngejalanin semuanya sendirian, ya. Kalau lagi sedih atau cape, inget masih ada aku yang selalu mau dengerin cerita kamu.</p>
+      <p>Semoga semua yang kamu pengenin pelan-pelan bisa tercapai. Banyak rezeki, sehat terus, panjang umur, dan semoga kita bisa bikin lebih banyak kenangan seru bareng lagi ✨</p>
+      <p>Hari ini jangan lupa banyak senyum, banyak makan enak, dan nikmatin hari kamu sepuasnyaa 🥳</p>
+      <p>Once again, happy birthday buat orang tersayang aku 💕</p>
       <p class="text-right mt-8">
-        Regards<br>
+        ur mine<br>
       </p>
     </div>
   </section>
 
   <!-- Section 3: The Timeline -->
   <section class="my-16 md:my-24">
-    <h2 class="text-4xl md:text-5xl font-anime text-center mb-12" data-aos="fade-up">Your Story Arc</h2>
+    <h2 class="text-4xl md:text-5xl font-anime text-center mb-12" data-aos="fade-up">Photobooth Memories</h2>
     <div class="space-y-16">
       <!-- Timeline Item 1 -->
       <div class="flex flex-col md:flex-row items-center gap-8" data-aos="fade-right">
         <!-- TODO: Replace with your photo -->
-        <img src="img/jammu.png" alt="Add photo 1" class="w-full md:w-1/2 rounded-lg shadow-xl border-4 border-white">
+        <img src="img/foto1.JPG" alt="Add photo 1" class="w-full md:w-1/2 rounded-lg shadow-xl border-4 border-white">
         <div class="text-center md:text-left">
           <!-- TODO: Customize the date and story -->
-          <h3 class="text-2xl font-anime text-sakura">Our first Meeting</h3>
-          <p class="mt-2 text-lg">Write your Story here</p>
+          <h3 class="text-2xl font-anime text-sakura">First Meet 🤍</h3>
+          <p class="mt-2 text-lg">“Masih inget banget gimana semuanya mulai dari sini. Awalnya cuma pertemuan biasa, tapi ternyata jadi salah satu hal terbaik yang pernah aku temuin.”</p>
             <br>
         </div>
       </div>
       <!-- Timeline Item 2 -->
       <div class="flex flex-col md:flex-row-reverse items-center gap-8" data-aos="fade-left">
         <!-- TODO: Replace with your photo -->
-        <img src="img/food.png" alt="Add photo 2" class="w-full md:w-1/2 rounded-lg shadow-xl border-4 border-white">
+        <img src="img/foto2.JPG" alt="Add photo 2" class="w-full md:w-1/2 rounded-lg shadow-xl border-4 border-white">
         <div class="text-center md:text-right">
           <!-- TODO: Customize the date and story -->
-          <h3 class="text-2xl font-anime text-sakura">Part 2</h3>
-          <p class="mt-2 text-lg">Message 2</p>
+          <h3 class="text-2xl font-anime text-sakura">Photobooth 📸</h3>
+          <p class="mt-2 text-lg">“Foto ini random banget, tapi tiap liat hasilnya selalu bikin ketawa sendiri. Sesimpel itu, tapi memorinya selalu hangat.”</p>
          <br>
         </div>
       </div>
       <!-- Timeline Item 3 (NEW) -->
       <div class="flex flex-col md:flex-row items-center gap-8" data-aos="fade-right">
-        <img src="img/mumbai.png" alt="Add photo 3" class="w-full md:w-1/2 rounded-lg shadow-xl border-4 border-white">
+        <img src="img/foto3.JPG" alt="Add photo 3" class="w-full md:w-1/2 rounded-lg shadow-xl border-4 border-white">
         <div class="text-center md:text-left">
-          <h3 class="text-2xl font-anime text-sakura">Part3</h3>
-          <p class="mt-2 text-lg">Message3</p>
+          <h3 class="text-2xl font-anime text-sakura">Birthday Memories 🎂</h3>
+          <p class="mt-2 text-lg">“Terima kasih udah bikin ulang tahun jadi lebih dari sekadar nambah umur. Ada kamu di hari itu bikin semuanya terasa spesial banget.”</p>
          <br>
         </div>
       </div>
       <!-- Timeline Item 4 (NEW) -->
       <div class="flex flex-col md:flex-row-reverse items-center gap-8" data-aos="fade-left">
-        <img src="img/imagica.png" alt="Add photo4" class="w-full md:w-1/2 rounded-lg shadow-xl border-4 border-white">
+        <img src="img/foto4.JPG" alt="Add photo4" class="w-full md:w-1/2 rounded-lg shadow-xl border-4 border-white">
         <div class="text-center md:text-right">
-          <h3 class="text-2xl font-anime text-sakura">Part 4</h3>
-          <p class="mt-2 text-lg">Message 4</p>
+          <h3 class="text-2xl font-anime text-sakura">Random Moments ✨</h3>
+          <p class="mt-2 text-lg">“Kadang kenangan terbaik bukan yang direncanain, tapi momen kecil yang terjadi begitu aja… dan untungnya aku ngalamin itu bareng kamu.”</p>
             <br>
         </div>
       </div>
@@ -124,49 +155,49 @@
           <!--  Card 1 -->
           <div class="snap-center flex-shrink-0 w-10/12 sm:w-1/2 md:w-1/3 lg:w-1/4" data-aos="fade-up" data-aos-delay="100">
             <div class="bg-white p-6 rounded-lg shadow-lg text-center h-full">
-              <img src="img/naruto.png" alt="Photo 1" class="w-full h-80 object-cover rounded-md mb-4">
+              <img src="img/foto5.png" alt="Photo 1" class="w-full h-80 object-cover rounded-md mb-4">
               <h3 class="text-2xl font-anime text-sakura">Photo 1</h3>
-              <p class="mt-2">"Caption 1”"</p>
+              <p class="mt-2">“Ga cuma tempatnya yang indah, harinya juga jadi lebih seru karena ada kamu.”"</p>
             </div>
           </div>
           <!--  Card 2 -->
           <div class="snap-center flex-shrink-0 w-10/12 sm:w-1/2 md:w-1/3 lg:w-1/4" data-aos="fade-up" data-aos-delay="200">
             <div class="bg-white p-6 rounded-lg shadow-lg text-center h-full">
-              <img src="img/pickachu.png" alt="Photo 2" class="w-full h-80 object-cover rounded-md mb-4">
+              <img src="img/foto6.png" alt="Photo 2" class="w-full h-80 object-cover rounded-md mb-4">
               <h3 class="text-2xl font-anime text-sakura">Photo 2</h3>
-              <p class="mt-2">"Caption 2"</p>
+              <p class="mt-2">“Foto ini bukti kalau momen sederhana bisa jadi kenangan yang susah dilupain.”</p>
             </div>
           </div>
           <!--  Card 3 -->
           <div class="snap-center flex-shrink-0 w-10/12 sm:w-1/2 md:w-1/3 lg:w-1/4" data-aos="fade-up" data-aos-delay="300">
             <div class="bg-white p-6 rounded-lg shadow-lg text-center h-full">
-              <img src="img/demon.png" alt="Photo 3" class="w-full h-80 object-cover rounded-md mb-4">
+              <img src="img/foto7.png" alt="Photo 3" class="w-full h-80 object-cover rounded-md mb-4">
               <h3 class="text-2xl font-anime text-sakura">Photo 3</h3>
-              <p class="mt-2">"Caption 3"</p>
+              <p class="mt-2">“Jalan-jalan bareng kamu tuh selalu punya cerita yang pengen diulang lagi.”</p>
             </div>
           </div>
           <!--  Card 4 -->
           <div class="snap-center flex-shrink-0 w-10/12 sm:w-1/2 md:w-1/3 lg:w-1/4" data-aos="fade-up" data-aos-delay="400">
             <div class="bg-white p-6 rounded-lg shadow-lg text-center h-full">
-              <img src="img/spirit.png" alt="Photo 4" class="w-full h-80 object-cover rounded-md mb-4">
+              <img src="img/foto8.png" alt="Photo 4" class="w-full h-80 object-cover rounded-md mb-4">
               <h3 class="text-2xl font-anime text-sakura">Photo 4</h3>
-              <p class="mt-2">"Caption 4"</p>
+              <p class="mt-2">“Kadang aku bingung, yang bikin happy tuh wisatanya atau orang di sebelah aku.”</p>
             </div>
           </div>
           <!--  Card 5 -->
           <div class="snap-center flex-shrink-0 w-10/12 sm:w-1/2 md:w-1/3 lg:w-1/4" data-aos="fade-up" data-aos-delay="500">
             <div class="bg-white p-6 rounded-lg shadow-lg text-center h-full">
-              <img src="img/tokyo.png" alt="Photo 5" class="w-full h-80 object-cover rounded-md mb-4">
+              <img src="img/foto9.png" alt="Photo 5" class="w-full h-80 object-cover rounded-md mb-4">
               <h3 class="text-2xl font-anime text-sakura">Photo 5</h3>
-              <p class="mt-2">"Caption 5"</p>
+              <p class="mt-2">“Capeknya perjalanan kalah sama serunya bikin kenangan bareng kamu.”</p>
             </div>
           </div>
           <!-- Card 6 -->
           <div class="snap-center flex-shrink-0 w-10/12 sm:w-1/2 md:w-1/3 lg:w-1/4" data-aos="fade-up" data-aos-delay="600">
             <div class="bg-white p-6 rounded-lg shadow-lg text-center h-full">
-              <img src="img/L.png" alt="Photo 6" class="w-full h-80 object-cover rounded-md mb-4">
+              <img src="img/foto10.png" alt="Photo 6" class="w-full h-80 object-cover rounded-md mb-4">
               <h3 class="text-2xl font-anime text-sakura">Photo 6</h3>
-              <p class="mt-2">"Caption 6"</p>
+              <p class="mt-2">“Semoga nanti ada banyak tempat baru yang bisa kita datengin bareng lagi.”</p>
             </div>
           </div>
         </div>
@@ -179,51 +210,60 @@
     <h2 class="text-4xl md:text-5xl font-anime text-center mb-12" data-aos="fade-up">The Y.V.A. Collection</h2>
     <p class="text-center text-lg -mt-8 mb-12">(Your Very-own Adventures)</p>
     <div id="lightgallery" class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <a href="img/1.png" data-aos="zoom-in" class="block w-full h-48 md:h-64">
-        <img src="img/1.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 1">
+      <a href="img/foto11.jpeg" data-aos="zoom-in" class="block w-full h-48 md:h-64">
+        <img src="img/foto11.jpeg" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 1">
       </a>
-      <a href="img/2.png" data-aos="zoom-in" data-aos-delay="100" class="block w-full h-48 md:h-64">
-        <img src="img/2.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 2">
+      <a href="img/foto12.jpeg" data-aos="zoom-in" data-aos-delay="100" class="block w-full h-48 md:h-64">
+        <img src="img/foto12.jpeg" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 2">
       </a>
-      <a href="img/3.png" data-aos="zoom-in" data-aos-delay="200" class="block w-full h-48 md:h-64">
-        <img src="img/3.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 3">
+      <a href="img/foto13.jpeg" data-aos="zoom-in" data-aos-delay="200" class="block w-full h-48 md:h-64">
+        <img src="img/foto13.jpeg" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 3">
       </a>
-      <a href="img/4.png" data-aos="zoom-in" data-aos-delay="300" class="block w-full h-48 md:h-64">
-        <img src="img/4.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 4">
+      <a href="img/foto14.jpeg" data-aos="zoom-in" data-aos-delay="300" class="block w-full h-48 md:h-64">
+        <img src="img/foto14.jpeg" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 4">
       </a>
       <!-- Second Row of Photos -->
-      <a href="img/5.png" data-aos="zoom-in" data-aos-delay="400" class="block w-full h-48 md:h-64">
-        <img src="img/5.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 5">
+      <a href="img/foto15.jpeg" data-aos="zoom-in" data-aos-delay="400" class="block w-full h-48 md:h-64">
+        <img src="img/foto15.jpeg" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 5">
       </a>
-      <a href="img/6.png" data-aos="zoom-in" data-aos-delay="500" class="block w-full h-48 md:h-64">
-        <img src="img/6.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 6">
+      <a href="img/foto16.jpeg" data-aos="zoom-in" data-aos-delay="500" class="block w-full h-48 md:h-64">
+        <img src="img/foto16.jpeg" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 6">
       </a>
-      <a href="img/7.png" data-aos="zoom-in" data-aos-delay="600" class="block w-full h-48 md:h-64">
-        <img src="img/7.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 7">
+      <a href="img/foto17.jpeg" data-aos="zoom-in" data-aos-delay="600" class="block w-full h-48 md:h-64">
+        <img src="img/foto17.jpeg" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 7">
       </a>
-      <a href="img/8.png" data-aos="zoom-in" data-aos-delay="700" class="block w-full h-48 md:h-64">
-        <img src="img/8.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 8">
+      <a href="img/foto18.jpeg" data-aos="zoom-in" data-aos-delay="700" class="block w-full h-48 md:h-64">
+        <img src="img/foto18.jpeg" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 8">
       </a>
       <!-- Third Row of Photos -->
-      <a href="img/9.png" data-aos="zoom-in" data-aos-delay="800" class="block w-full h-48 md:h-64">
-        <img src="img/9.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 9">
+      <a href="img/foto19.jpeg" data-aos="zoom-in" data-aos-delay="800" class="block w-full h-48 md:h-64">
+        <img src="img/foto19.jpeg" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 9">
       </a>
-      <a href="img/10.png" data-aos="zoom-in" data-aos-delay="900" class="block w-full h-48 md:h-64">
-        <img src="img/10.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 10">
+      <a href="img/foto20.jpeg" data-aos="zoom-in" data-aos-delay="900" class="block w-full h-48 md:h-64">
+        <img src="img/foto20.jpeg" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 10">
       </a>
-      <a href="img/11.png" data-aos="zoom-in" data-aos-delay="1000" class="block w-full h-48 md:h-64">
-        <img src="img/11.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 11">
+      <a href="img/foto21.jpeg" data-aos="zoom-in" data-aos-delay="1000" class="block w-full h-48 md:h-64">
+        <img src="img/foto21.jpeg" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 11">
       </a>
-      <a href="img/12.png" data-aos="zoom-in" data-aos-delay="1100" class="block w-full h-48 md:h-64">
-        <img src="img/12.png" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 12">
+      <a href="img/foto22.jpeg" data-aos="zoom-in" data-aos-delay="1100" class="block w-full h-48 md:h-64">
+        <img src="img/foto22.jpeg" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 w-full h-full object-cover border-4 border-white" alt="Memory 12">
       </a>
     </div>
   </section>
 
-    <!-- Section 6: Finale -->
+    <!-- Section 6: Finale with Music -->
     <section class="my-16 md:my-24" data-aos="fade-up">
-        <h2 class="text-4xl md:text-5xl font-anime text-center mb-4">Happy Birthday [Enter Name of your loved one]</h2>
-        <div class="max-w-4xl mx-auto rounded-lg shadow-2xl overflow-hidden bg-navy">
+        <h2 class="text-4xl md:text-5xl font-anime text-center mb-8">Happy Birthday Fina Nailu Zahira</h2>
+        <div class="max-w-2xl mx-auto rounded-lg shadow-2xl overflow-hidden bg-gradient-to-r from-pink-200 to-blue-200 p-8">
+            <div class="text-center">
+                <p class="text-lg font-semibold text-gray-700 mb-4">🎵 Playing Special Song For You 🎵</p>
+                <audio controls class="w-full mb-4 rounded-lg" autoplay>
+                    <source src="img/perfect.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p class="text-sm text-gray-600 italic">"Lagu Perfect" - A song to celebrate your special day ✨</p>
+            </div>
+        </div>
     </section>
 
 </main>

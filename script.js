@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     // --- Live Age Counter ---
-    const birthDate = new Date('2006-08-14T00:00:00');
+    const birthDate = new Date('2005-05-26T00:00:00');
     const countdownElement = document.getElementById('countdown');
+    const currentTimeElement = document.getElementById('current-time');
 
     function updateAge() {
         const now = new Date();
@@ -26,8 +27,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
         countdownElement.innerHTML = `${years}y ${months}m ${days}d <br> ${hours}h ${minutes}m ${seconds}s`;
     }
+
+    function updateCurrentTime() {
+        const now = new Date();
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const seconds = String(now.getSeconds()).padStart(2, '0');
+        
+        if (currentTimeElement) {
+            currentTimeElement.innerHTML = `🕐 ${hours}:${minutes}:<span class="animate-pulse">${seconds}</span>`;
+        }
+    }
+
     setInterval(updateAge, 1000);
+    setInterval(updateCurrentTime, 1000);
     updateAge();
+    updateCurrentTime();
 
     // --- Initialize AOS (Animate on Scroll) ---
     AOS.init({
